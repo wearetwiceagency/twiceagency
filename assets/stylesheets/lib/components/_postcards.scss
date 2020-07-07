@@ -1,0 +1,314 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Postcard
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+$class: "postcard";
+
+.#{$class} {
+  background-color: white;
+  float: left;
+  min-height: 540px;
+  padding: 32px;
+  width: 960px;
+  .#{$class}-box {
+    background-size: 896px 476px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 100%;
+    width: 100%;
+    .#{$class}-row {
+      float: left;
+      width: 100%;
+      .#{$class}-wide {
+        background-size: 896px 476px;
+        padding: 32px;
+        min-height: 476px;
+        width: 896px;
+        &.right {
+          width: 50%;
+        }
+        &.right-third {
+          float: right;
+          width: 70%;
+        }
+        &.left {
+          width: 50%;
+        }
+        &.left-third {
+          float: left;
+          width: 70%;
+        }
+      }
+      .#{$class}-left {
+        float: left;
+        padding: 32px;
+        min-height: 476px;
+        width: 448px;
+        &.fill {
+          padding: 32px 32px 32px 0;
+        }
+      }
+      .#{$class}-right {
+        float: right;
+        padding: 32px;
+        min-height: 476px;
+        width: 448px;
+        &.fill {
+          padding: 32px 0 32px 32px;
+        }
+      }
+      .#{$class}-grid {
+        background-color: red;
+        float: left;
+        padding: 32px;
+        margin: 0 16px;
+        min-height: 184px;
+        width: 184px;
+        &:first-child {
+          margin: 0 16px 0 0;
+          background-color: green;
+        }
+        &:last-child {
+          margin: 0 0 0 16px;
+          background-color: blue;
+        }
+      }
+    }
+  }
+  &.top {
+    margin: 32px 32px 0px;
+  }
+  &.bottom {
+    margin: 0 32px 32px;
+  }
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$xxs} {
+  .#{$class} {
+    .#{$class}-box {
+      &.responsive {
+        background-size: 592px 952px;
+      }
+      .#{$class}-row {
+      }
+    }
+  }
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+  .#{$class} {
+    min-height: 476px;
+    padding: 16px;
+    width: 328px;
+    .#{$class}-box {
+      &.responsive {
+        background-size: 592px 952px;
+      }
+      .#{$class}-row {
+        .#{$class}-wide {
+          background-size: 328px 476px;
+          padding: 32px;
+          min-height: 476px;
+          width: 296px;
+          &.right,
+          &.right-third {
+            width: 100%;
+          }
+          &.left
+          &.left-third {
+            width: 100%;
+          }
+        }
+        .#{$class}-left {
+          background-size: 328px 476px;
+          padding: 32px;
+          min-height: 476px;
+          width: 296px;
+          &.fill {
+            padding: 32px 0;
+          }
+        }
+        .#{$class}-right {
+          background-size: 328px 476px;
+          padding: 32px;
+          min-height: 476px;
+          width: 296px;
+          &.fill {
+            padding: 32px 0;
+          }
+        }
+        .#{$class}-grid {
+          padding: 0;
+          margin: 0 1px;
+          min-height: 56px;
+          width: 56px;
+          &:first-child {
+            margin: 0 1px 0 0;
+          }
+          &:last-child {
+            margin: 0 0 0 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+  .#{$class} {
+    min-height: 476px;
+    width: 416px;
+    .#{$class}-box {
+      &.responsive {
+        background-size: 592px 952px;
+      }
+      .#{$class}-row {
+        .#{$class}-wide {
+          background-size: 416px 476px;
+          padding: 32px;
+          min-height: 476px;
+          width: 352px;
+          &.right,
+          &.right-third {
+            width: 100%;
+          }
+          &.left
+          &.left-third {
+            width: 100%;
+          }
+        }
+        .#{$class}-left {
+          background-size: 416px 476px;
+          padding: 32px;
+          min-height: 476px;
+          width: 352px;
+          &.fill {
+            padding: 32px 0;
+          }
+        }
+        .#{$class}-right {
+          background-size: 416px 476px;
+          padding: 32px;
+          min-height: 476px;
+          width: 352px;
+          &.fill {
+            padding: 32px 0;
+          }
+        }
+        .#{$class}-grid {
+          padding: 32px;
+          margin: 0 4px;
+          min-height: 82px;
+          width: 82px;
+          &:first-child {
+            margin: 0 4px 0 0;
+          }
+          &:last-child {
+            margin: 0 0 0 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .#{$class} {
+    min-height: 476px;
+    width: 656px;
+    .#{$class}-box {
+      &.responsive {
+        background-size: 592px 952px;
+      }
+      .#{$class}-row {
+        .#{$class}-wide {
+          background-size: 592px 476px;
+          padding: 32px;
+          min-height: 476px;
+          width: 592px;
+          &.right,
+          &.right-third {
+            width: 100%;
+          }
+          &.left
+          &.left-third {
+            width: 100%;
+          }
+        }
+        .#{$class}-left {
+          background-size: 592px 952px;
+          padding: 32px;
+          min-height: 476px;
+          width: 592px;
+          &.fill {
+            padding: 32px 0;
+          }
+        }
+        .#{$class}-right {
+          background-size: 592px 952px;
+          padding: 32px;
+          min-height: 476px;
+          width: 592px;
+          &.fill {
+            padding: 32px 0;
+          }
+        }
+        .#{$class}-grid {
+          padding: 32px;
+          margin: 0 16px;
+          min-height: 124px;
+          width: 124px;
+          &:first-child {
+            margin: 0 16px 0 0;
+          }
+          &:last-child {
+            margin: 0 0 0 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+    }
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+    }
+  }
+}

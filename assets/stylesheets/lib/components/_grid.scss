@@ -1,0 +1,168 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Grid
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+$class: "grid";
+
+.#{$class} {
+  float: left;
+  width: 960px;
+  .#{$class}-box {
+    float: left;
+    padding: 24px;
+    width: 100%;
+    .#{$class}-row {
+      float: left;
+      width: 100%;
+      .#{$class}-item {
+        float: left;
+        height: 228px;
+        padding: 8px;
+        width: 228px;
+        &.third {
+          height: 304px;
+          width: 304px;
+        }
+        .#{$class}-inner {
+          background-color: $gray-100;
+          float: left;
+          height: 212px;
+          width: 212px;
+          &.third {
+            height: 288px;
+            width: 288px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$xxs} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+  .#{$class} {
+    width: 360px;
+    .#{$class}-box {
+      .#{$class}-row {
+        .#{$class}-item {
+          height: 156px;
+          width: 156px;
+          &.third {
+            height: 156px;
+            width: 156px;
+          }
+          .#{$class}-inner {
+            height: 140px;
+            width: 140px;
+            &.third {
+              height: 140px;
+              width: 140px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+  .#{$class} {
+    width: 480px;
+    .#{$class}-box {
+      .#{$class}-row {
+        .#{$class}-item {
+          height: 216px;
+          width: 216px;
+          &.third {
+            height: 216px;
+            width: 216px;
+          }
+          .#{$class}-inner {
+            height: 200px;
+            width: 200px;
+            &.third {
+              height: 200px;
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .#{$class} {
+    width: 720px;
+    .#{$class}-box {
+      .#{$class}-row {
+        .#{$class}-item {
+          height: 168px;
+          width: 168px;
+          &.third {
+            height: 336px;
+            width: 336px;
+          }
+          .#{$class}-inner {
+            height: 152px;
+            width: 152px;
+            &.third {
+              height: 320px;
+              width: 320px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

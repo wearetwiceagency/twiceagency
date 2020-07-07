@@ -1,0 +1,129 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Hero
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+$class: "hero";
+
+.#{$class} {
+  float: left;
+  padding: 64px 0 0;
+  width: 960px;
+  .#{$class}-box {
+    float: left;
+    padding: 16px;
+    width: 100%;
+    .#{$class}-wrap {
+      float: left;
+      margin: 16px;
+      padding: 32px;
+      width: calc(100% - 32px);
+    }
+    .#{$class}-row {
+      float: left;
+      width: 100%;
+    }
+    &.narrow {
+      width: 50%;
+    }
+  }
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$xxs} {
+  .#{$class} {
+    padding: 12px 0 0;
+    width: calc(240px - 64px);
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      &.narrow {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+  .#{$class} {
+    padding: 24px 0 0;
+    width: calc(360px - 64px);
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      &.narrow {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+  .#{$class} {
+    padding: 32px 0 0;
+    width: calc(480px - 64px);
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      &.narrow {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .#{$class} {
+    width: calc(720px - 64px);
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      &.narrow {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .#{$class} {
+    width: calc(960px - 64px);
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+    }
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .#{$class} {
+    width: 960px;
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .#{$class} {
+    width: 960px;
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+    }
+  }
+}
